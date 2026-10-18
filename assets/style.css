@@ -1,46 +1,41 @@
-* {
+*{
       box-sizing: border-box;
       margin: 0;
     }
 
 
-    body {
+    body{
       background: #252B29;
       color: #F4EEE3;
-      font-family: "DM Sans", sans-serif;
+      font-family: "DM Sans" , sans-serif;
     }
-
     a {
-      color: inherit;
+      color: inherit ;
       text-decoration: none;
     }
-
-    /* ---------- Header ---------- */
-
-    .site-header {
+  /* header */
+    .site-header{
       height: clamp(66px, 7vw, 82px);
       display: flex;
-      align-items: center;
+      align-items:  center;
       padding: 0 clamp(16px, 5vw, 70px);
       background: #252B29;
-      border-bottom: 1px solid rgba(244, 238, 227, 0.15);
+      border-bottom:1px solid rgba(244, 238, 227, 0.15);
     }
-
-    .brand {
+    .brand{
       display: flex;
       align-items: center;
-      gap: 10px;
-      font: 600 13px "DM Sans", sans-serif;
-      letter-spacing: 0.16em;
+      gap: 10px ;
+      font: 600  13px "DM Sans", sans-serif;
+      letter-spacing:0.16em;
     }
-
-    .brand-mark {
+    .brand-mark{
       width: auto;
       height: clamp(40px, 4.5vw, 56px);
       object-fit: contain;
     }
 
-    .brand small {
+    .brand small{
       display: block;
       margin-top: 4px;
       color: rgba(244, 238, 227, 0.7);
@@ -48,28 +43,27 @@
       letter-spacing: 0.3em;
     }
 
-    .main-nav {
+    .main-nav{
       display: flex;
       align-items: center;
       gap: clamp(14px, 2.2vw, 29px);
-      margin-left: auto;
+      margin-left: auto ;
       font: 500 11px "DM Sans", sans-serif;
       letter-spacing: 0.05em;
       color: rgba(244, 238, 227, 0.7);
     }
-
-    .main-nav a {
-      transition: color 0.25s;
+    .main-nav a{
+      transition: color 0.25s ;
     }
 
     .main-nav a:hover,
-    .main-nav a.active {
+    .main-nav a.active{
       color: #F7F2E8;
     }
 
-    .nav-cta {
+    .nav-cta{
       display: flex;
-      align-items: center;
+      align-items:center;
       gap: 8px;
       padding: 11px 16px;
       border: 1px solid #F2A93B;
@@ -78,28 +72,27 @@
       transition: background 0.3s;
     }
 
-    .nav-cta:hover {
+    .nav-cta:hover{
       background: #F2A93B;
-      color: #252B29;
+      color: #252B29 ;
     }
-
-    .page-indicator {
+    .page-indicator{
       margin-left: clamp(12px, 2vw, 28px);
       color: #F2A93B;
       font: 11px "DM Sans", sans-serif;
     }
 
-    /* ---------- Hero ---------- */
+  /* hero */
 
-    .hero {
-      position: relative;
+    .hero{
+      position:  relative;
       min-height: clamp(660px, 85vh, 860px);
       display: flex;
-      align-items: flex-end;
+      align-items: flex-end ;
       padding: clamp(220px, 10vw, 140px) clamp(22px, 8vw, 110px);
     }
 
-    .hero-image {
+    .hero-image{
       position: absolute;
       inset: 0;
       background-image: url("images/story.jpg");
@@ -108,15 +101,14 @@
       animation: heroIn 1.4s ease both;
     }
 
-    .hero-overlay {
+    .hero-overlay{
       position: absolute;
       inset: 0;
       background:
         linear-gradient(90deg, rgba(37, 43, 41, 0.87), rgba(37, 43, 41, 0.18) 75%),
         linear-gradient(0deg, rgba(37, 43, 41, 0.7), transparent 55%);
     }
-
-    .hero-content {
+    .hero-content{
       position: relative;
       max-width: 680px;
       animation: rise 0.8s 0.2s ease both;
@@ -128,31 +120,30 @@
       letter-spacing: 0.2em;
       text-transform: uppercase;
     }
-
-    .hero h1 {
+    .hero h1{
       margin: clamp(14px, 2vw, 23px) 0;
       font: 500 clamp(42px, 7vw, 82px) / 0.95 "Playfair Display", serif;
       letter-spacing: -0.04em;
     }
 
-    .hero h1 em {
+    .hero h1 em{
       color: #F2A93B;
       font-family: "Cormorant Garamond", "Playfair Display", serif;
-      font-weight: 500;
+      font-weight: 500 ;
     }
 
-    .hero-copy {
+    .hero-copy{
       max-width: min(335px, 100%);
       margin: clamp(14px, 2vw, 28px) 0 clamp(24px, 3vw, 35px);
       color: rgba(244, 238, 227, 0.85);
       font: 15px / 1.65 "DM Sans", sans-serif;
     }
 
-    .button {
+    .button{
       display: inline-flex;
       align-items: center;
       gap: 20px;
-      padding: 15px 19px;
+      padding:  15px 19px;
       background: #bd8516;
       color: #ffffff;
       font: 600 11px "DM Sans", sans-serif;
@@ -164,18 +155,18 @@
       transform: translateY(-3px);
     }
 
-    .hero-note {
+    .hero-note{
       position: absolute;
       right: 5vw;
       bottom: 9vw;
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap:  14px;
       color: rgba(244, 238, 227, 0.7);
       font: 10px "DM Sans", sans-serif;
     }
 
-    .hero-note p {
+    .hero-note p{
       position: absolute;
       right: 0;
       top: 22px;
@@ -185,10 +176,9 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
     }
+  /* welcome */
 
-    /* ---------- Welcome (1 or 2 columns automatically) ---------- */
-
-    .welcome {
+    .welcome{
       padding: clamp(60px, 8vw, 110px) clamp(22px, 10vw, 150px);
       background: #F4EEE3;
     }
@@ -201,11 +191,11 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
       gap: clamp(28px, 8vw, 150px);
-      align-items: end;
-      margin-top: clamp(24px, 3.5vw, 45px);
+      align-items:  end;
+      margin-top: clamp(24px, 3.5vw, 45px) ;
     }
 
-    .welcome h2 {
+    .welcome h2{
       color: #252B29;
       font: 500 clamp(38px, 5.2vw, 78px) / 0.92 "Playfair Display", serif;
       letter-spacing: -0.045em;
@@ -223,7 +213,7 @@
       font: clamp(15px, 1.4vw, 17px) / 1.7 "DM Sans", sans-serif;
     }
 
-    .text-link {
+    .text-link{
       display: inline-flex;
       align-items: center;
       gap: 12px;
@@ -232,54 +222,52 @@
       color: #B8692F;
       font: 600 11px "DM Sans", sans-serif;
       letter-spacing: 0.05em;
-      transition: gap 0.3s;
+      transition: gap 0.3s ;
     }
 
-    .text-link:hover {
-      gap: 20px;
+    .text-link:hover{
+      gap: 20px ;
     }
 
-    /* ---------- Feature strip (1 or 2 columns automatically) ---------- */
+  /* features */
 
-    .feature-strip {
+    .feature-strip{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
     }
-
     .feature-photo {
       min-height: 320px;
       overflow: hidden;
     }
 
-    .feature-image {
+    .feature-image{
       width: 100%;
-      height: 100%;
+      height:100%;
       background-image: url("images/home2.jpg");
       background-size: cover;
       background-position: center;
       transition: transform 1.2s ease;
     }
-
     .feature-photo:hover .feature-image {
       transform: scale(1.06);
     }
 
-    .feature-copy {
+    .feature-copy{
       padding: clamp(48px, 8vw, 110px) clamp(22px, 7vw, 110px);
       background: #3E8A8C;
     }
 
-    .feature-copy .eyebrow {
+    .feature-copy .eyebrow{
       color: #F7F2E8;
     }
 
     .feature-copy h2 {
-      margin: clamp(14px, 2vw, 25px) 0;
+      margin:clamp(14px, 2vw, 25px) 0;
       font: 500 clamp(38px, 5.2vw, 78px) / 0.92 "Playfair Display", serif;
       letter-spacing: -0.045em;
     }
 
-    .feature-copy h2 em {
+    .feature-copy h2 em{
       color: #F2A93B;
       font-family: "Cormorant Garamond", "Playfair Display", serif;
     }
@@ -296,8 +284,7 @@
       border-color: rgba(247, 242, 232, 0.5);
     }
 
-    /* ---------- Quote ---------- */
-
+    /* ---------- quote ---------- */
     .quote-section {
       padding: clamp(64px, 8vw, 120px) clamp(22px, 10vw, 150px);
       text-align: center;
@@ -336,7 +323,7 @@
       padding: 0;
     }
 
-    .footer-links {
+    .footer-links{
       display: flex;
       flex-wrap: wrap;
       gap: clamp(14px, 2vw, 30px);
@@ -348,10 +335,8 @@
       background-clip: text;
       color: transparent;
     }
-
-    /* ---------- Animations ---------- */
-
-    @keyframes heroIn {
+  /* animations */
+    @keyframes heroIn{
       from {
         transform: scale(1.08);
         opacity: 0.4;
@@ -362,7 +347,7 @@
       }
     }
 
-    @keyframes rise {
+    @keyframes rise{
       from {
         transform: translateY(25px);
         opacity: 0;
@@ -373,7 +358,7 @@
       }
     }
 
-    @keyframes grow {
+    @keyframes grow{
       from {
         transform: scaleX(0);
       }
@@ -382,7 +367,7 @@
       }
     }
 
-    @keyframes spin {
+    @keyframes spin{
       to {
         transform: rotate(360deg);
       }
@@ -395,35 +380,267 @@
       }
     }
 
-    /* Scroll reveal (modern browsers) */
 
-    @supports (animation-timeline: view()) {
-      .welcome-grid,
-      .feature-copy,
-      .quote-section blockquote {
-        animation: reveal linear both;
-        animation-timeline: view();
-        animation-range: entry 0% entry 50%;
-      }
-    }
-
-    /* ---------- Mobile (the only media query needed) ---------- */
-
-    @media (max-width: 760px) {
+  /* media query */
+    @media (max-width: 760px){
       .main-nav a:not(.nav-cta),
       .page-indicator,
       .hero-note {
         display: none;
       }
-
-      .nav-cta {
+      .nav-cta{
         gap: 4px;
         padding: 9px 12px;
         font-size: 10px;
       }
-
-      .site-footer {
+      .site-footer{
         flex-direction: column;
         align-items: flex-start;
+      }
+    }
+/* ---------- menu ---------------*/
+  /* ---------- Logo mark (text star) ---------- */
+/* ---------- Logo mark (text star) ---------- */
+/* ---------- Logo mark (text star) ---------- */
+
+    .brand-mark {
+      color: #F2A93B;
+      font-size: 24px;
+    }
+
+    /* ---------- Page intro ---------- */
+
+    .page-intro {
+      padding: clamp(60px, 8vw, 110px) clamp(22px, 10vw, 150px) clamp(48px, 6vw, 80px);
+    }
+
+    .page-intro .eyebrow {
+      animation: rise 0.8s 0.1s ease both;
+    }
+
+    .page-intro h1 {
+      max-width: 900px;
+      margin: clamp(16px, 2.5vw, 25px) 0;
+      font: 500 clamp(44px, 7.5vw, 108px) / 0.9 "Playfair Display", serif;
+      letter-spacing: -0.05em;
+      animation: rise 0.8s 0.25s ease both;
+    }
+
+    .page-intro h1 em {
+      color: #F2A93B;
+      font-family: "Cormorant Garamond", "Playfair Display", serif;
+      font-weight: 500;
+    }
+
+    .intro-copy {
+      max-width: 420px;
+      color: rgba(244, 238, 227, 0.75);
+      font: clamp(15px, 1.4vw, 17px) / 1.7 "DM Sans", sans-serif;
+      animation: rise 0.8s 0.4s ease both;
+    }
+
+    /* ---------- Menu section ---------- */
+
+    .menu-section {
+      padding: clamp(36px, 4vw, 56px) clamp(22px, 10vw, 150px) clamp(60px, 8vw, 110px);
+      background: #F4EEE3;
+      color: #252B29;
+    }
+
+    /* ---------- Tabs (simple links that jump to each menu) ---------- */
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(18px, 3vw, 34px);
+      border-bottom: 1px solid rgba(37, 43, 41, 0.15);
+    }
+
+    .tabs a {
+      position: relative;
+      padding-bottom: 18px;
+      color: rgba(37, 43, 41, 0.6);
+      font: 600 12px "DM Sans", sans-serif;
+      letter-spacing: 0.03em;
+      transition: color 0.3s;
+    }
+
+    .tabs a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background: #B8692F;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .tabs a:hover,
+    .tabs a:focus {
+      color: #B8692F;
+    }
+
+    .tabs a:hover::after,
+    .tabs a:focus::after {
+      transform: scaleX(1);
+    }
+
+    /* first tab looks active until another tab is clicked */
+    .tabs a:first-child {
+      color: #B8692F;
+    }
+
+    .tabs a:first-child::after {
+      transform: scaleX(1);
+    }
+
+    .tabs:focus-within a:first-child:not(:focus):not(:hover) {
+      color: rgba(37, 43, 41, 0.6);
+    }
+
+    .tabs:focus-within a:first-child:not(:focus):not(:hover)::after {
+      transform: scaleX(0);
+    }
+
+    /* ---------- Menu titles + panels (list + photo) ---------- */
+
+    /* Only one panel is shown at a time */
+
+    .panel {
+      display: none;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: clamp(32px, 6vw, 90px);
+      margin-top: clamp(24px, 4vw, 50px);
+      scroll-margin-top: 220px;
+    }
+
+    /* default panel (shown when nothing is clicked) */
+    #coffee {
+      display: flex;
+    }
+
+    /* panel that was clicked */
+    #kitchen:target,
+    #sweet:target {
+      display: flex;
+    }
+
+    /* hide the default panel when another one is clicked */
+    #kitchen:target ~ #coffee,
+    #sweet:target ~ #coffee {
+      display: none;
+    }
+
+    /* ---------- Menu list ---------- */
+
+    .menu-list {
+      flex: 3 1 380px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-item {
+      display: grid;
+      grid-template-columns: clamp(32px, 5vw, 55px) 1fr auto;
+      gap: 10px;
+      padding: clamp(18px, 2.4vw, 26px) 0;
+      border-bottom: 1px solid rgba(37, 43, 41, 0.15);
+      animation: fade 0.6s ease both;
+      transition: padding 0.35s ease, background 0.35s ease;
+    }
+
+    .menu-item:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .menu-item:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    .menu-item:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    .menu-item:hover {
+      padding-left: 16px;
+      background: linear-gradient(90deg, rgba(242, 169, 59, 0.18), transparent);
+    }
+
+    .menu-number {
+      padding-top: 4px;
+      color: #B8692F;
+      font: 11px "DM Sans", sans-serif;
+    }
+
+    .menu-item h3 {
+      margin-bottom: 7px;
+      font: 500 clamp(20px, 2vw, 24px) "Playfair Display", serif;
+    }
+
+    .menu-item p {
+      color: rgba(37, 43, 41, 0.7);
+      font: 13px "DM Sans", sans-serif;
+    }
+
+    .menu-price {
+      padding-top: 4px;
+      color: #B8692F;
+      font: 500 18px "Cormorant Garamond", serif;
+      white-space: nowrap;
+    }
+
+    /* ---------- Photo + caption ---------- */
+
+    .menu-aside {
+      flex: 2 1 280px;
+      max-width: 420px;
+    }
+
+    .menu-photo {
+      aspect-ratio: 1 / 1.18;
+      background-color: #3E8A8C;
+      background-size: cover;
+      background-position: center;
+      animation: wipe 1s ease both;
+      transition: transform 1.2s ease;
+    }
+
+    .menu-aside:hover .menu-photo {
+      transform: scale(1.03);
+    }
+
+    .menu-aside figcaption {
+      max-width: 270px;
+      margin-top: 16px;
+      color: #B8692F;
+      font: italic 18px / 1.35 "Cormorant Garamond", serif;
+      animation: fade 0.8s 0.5s ease both;
+    }
+
+    /* ---------- Animations (new ones for this page) ---------- */
+
+    @keyframes fade {
+      from {
+        transform: translateY(14px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes wipe {
+      from {
+        clip-path: inset(0 0 100% 0);
+        opacity: 0.4;
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
       }
     }
