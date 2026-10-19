@@ -1,0 +1,198 @@
+/* ---------- Basics ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #120b09;
+  color: #f5efe6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 80px;
+  border-bottom: 1px solid #2e2320;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-star {
+  color: #c9a24b;
+  font-size: 28px;
+}
+
+.logo-text strong {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.logo-text small {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #c9a24b;
+  margin-top: 3px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+  color: #d6c9b8;
+}
+
+.nav a.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #c9a24b;
+}
+
+.nav .reserve {
+  border: 1px solid #c9a24b;
+  color: #c9a24b;
+  padding: 12px 16px;
+  border-radius: 30px;
+}
+
+.nav .count {
+  color: #c9a24b;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  width: 1003px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
+
+.label {
+  color: #c9a24b;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 88px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #f5efe6;
+}
+
+.hero h1 em {
+  color: #c9a24b;
+  font-style: italic;
+}
+
+.intro {
+  margin-top: 30px;
+  width: 420px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #b9ab98;
+}
+
+/* ---------- Gallery ---------- */
+.gallery {
+  width: 1003px;
+  margin: 0 auto 90px;
+  display: grid;
+  grid-template-columns: 365px 260px 348px;
+  grid-auto-rows: 220px;
+  gap: 15px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: #3b2a22;
+}
+
+/* a soft dark fade so the caption can be read */
+.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+}
+
+.caption {
+  position: relative;
+  z-index: 1;
+  padding: 0 18px 18px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* sizes */
+.tall  { grid-row: span 2; }
+.wide  { grid-column: span 2; }
+.wide2 { grid-column: span 2; }
+
+/* placeholder colours - replace with photos below */
+.c1 { background-color: #cfc3b5; }
+.c2 { background-color: #6b3b2f; }
+.c3 { background-color: #b98a5a; }
+.c4 { background-color: #7d8a8f; }
+.c5 { background-color: #4a3a35; }
+.c6 { background-color: #6a4a35; }
+
+/* To use real photos, uncomment and set your file names:
+.card { background-size: cover; background-position: center; }
+.c1 { background-image: url("images/morning-light.jpg"); }
+.c2 { background-image: url("images/little-art.jpg"); }
+.c3 { background-image: url("images/fresh-daily.jpg"); }
+.c4 { background-image: url("images/behind-the-bar.jpg"); }
+.c5 { background-image: url("images/daily-ritual.jpg"); }
+.c6 { background-image: url("images/our-people.jpg"); }
+*/
+
+.card:hover .caption {
+  color: #c9a24b;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 70px;
+  border-top: 1px solid #2e2320;
+  font-size: 11px;
+  color: #b9ab98;
+}
+
+.copy a {
+  color: #c9a24b;
+}
