@@ -4,11 +4,6 @@ A bilingual (English and Hindi), fully responsive website for **Aravali Brew Caf
 
 🔗 **Live site:** https://adhyyanverma9080-max.github.io/Aravali-Brew-cafe-/
 
-
-<!-- Add screenshots to assets/images/ and uncomment the lines below -->
-<!-- ![Home page](assets/images/screenshot-home.png) -->
-<!-- ![Menu page](assets/images/screenshot-menu.png) -->
-
 ---
 
 ## ✨ Features
@@ -117,8 +112,6 @@ Open the menu page and press `Ctrl + P`. The print styles (`@media print` in `st
 **Aravali Brew Cafe**, established 2017
 Central Hub, Jaipur Road, opposite Patel Stadium, Hathi Bhata, Ajmer, Rajasthan 305001
 
-- 📞 +91 63771 18119
-- ✉️ hello@aravalibrew.cafe
 - 📷 Instagram: [@aravalibrews](https://www.instagram.com/aravalibrews/)
 
 **Opening hours**
@@ -138,10 +131,7 @@ Central Hub, Jaipur Road, opposite Patel Stadium, Hathi Bhata, Ajmer, Rajasthan 
 
 ## 👤 Author
 
-**Adhyyan Verma & Rajat sharama **
+**Rajat Sharma & Adhyyan Verma**
 
 ---
 
-## 📜 License
-
-This project was created for educational purposes. Cafe name, logo and photos belong to Aravali Brew Cafe. Add a license here if you plan to share the code publicly, for example MIT.
